@@ -1,0 +1,15 @@
+<h2>Top Messages</h2>
+<div class="container">
+	<section>
+		<div class="grid grid-pad">
+			<a *ngFor="let message of messages | slice:0:4" [routerLink]="['/detail', message._id]" class="col-1-4">
+				<div class="module">
+					<h4>{{message.title}}</h4>
+				</div>
+			</a>
+		</div>
+	</section>
+</div>
+<div class="container">
+	<app-message-search></app-message-search>
+</div>

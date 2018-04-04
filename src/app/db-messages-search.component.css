@@ -1,0 +1,37 @@
+.results
+{
+	position: absolute;
+	top: 29.09em;
+}
+
+.search-result
+{
+	border-bottom: 1px solid #36A485;
+	border-left: 1px solid #36A485;
+	border-right: 1px solid #36A485;
+	color: #36A485;
+	margin-right: 1px;
+	width: 192px;
+	height: 16px;
+	padding: 5px;
+	background-color: white;
+	cursor: pointer;
+}
+
+.search-result:hover
+{
+	color: #F4F4F4;
+	background-color: #36A485;
+}
+
+#search-box
+{
+	width: 200px;
+	height: 20px;
+}
+
+form
+{
+	text-align: center;
+	border: solid transparent 1px
+}

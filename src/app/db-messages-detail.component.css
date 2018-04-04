@@ -1,0 +1,43 @@
+div
+{
+	white-space: pre-wrap;
+	text-align: center;
+	justify-content: middle;
+	margin: .5em 0;
+	color: #1B282D;
+	font-size: 1em;
+}
+
+label
+{
+	text-align: left;
+	margin: .5em 0;
+	color: #57986D;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+button
+{
+	margin-top: 20px;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;;
+	background-color: #EEE;
+	color: #57986D;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 4px;
+	cursor: pointer; cursor: hand;
+}
+
+button:hover
+{
+	color: #EEE;
+	background-color: #57986D;
+}
+
+button:disabled
+{
+	background-color: #eee;
+	color: #ccc; 
+	cursor: auto;
+}

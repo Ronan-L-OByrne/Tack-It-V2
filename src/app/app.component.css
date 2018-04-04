@@ -1,0 +1,54 @@
+h1
+{
+	text-align: center;
+	text-decoration: none;
+	font-size: 2.75em;
+	color: #57986D;
+	margin-bottom: 0;
+}
+
+h2
+{
+	font-size: 2em;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.navbar
+{
+	padding: 0px;
+	padding-right: 5px;
+	margin: 0px;
+	width: 100%;
+	border-bottom: 1px solid #57986D;
+	justify-content: middle;
+	align-content: center;
+}
+
+nav a 
+{
+	padding: 5px 10px;
+	text-decoration: none;
+	margin-top: 10px;
+	display: inline-block;
+	color: #57986D;
+	background-color: white;
+}
+
+nav a:hover
+{
+	color: #57986D;
+	background-color: #BDFFD3;
+}
+
+nav a.active
+{
+	color: #EEE;
+	background-color: #57986D;
+}
+
+.selected
+{
+	background-color: white !important;
+	color: white;
+}

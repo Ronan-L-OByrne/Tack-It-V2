@@ -1,0 +1,41 @@
+<h2>Messages</h2>
+<div class="container">
+	<table border="0"><form>
+		<tr>
+			<td><label>Title:</label></td><td><input #messageName /></td>
+		</tr>
+		<tr>
+			<td><label>Message:</label></td><td><textarea rows="5"  #messageMsg placeholder="Type your message here!"></textarea></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<button class="container" (click)="add(messageName.value, messageMsg.value); messageName.value=''; messageMsg.value=''" >
+					<span >Post</span>
+				</button>
+			</td>
+		</tr>
+	</form></table>
+</div>
+<div class="container">
+	<ul class="messages">
+		<li *ngFor="let message of messages"
+		(click)="onSelect(message)"
+		[class.selected]="message === selectedMessage">
+				<span class="tack-left">&#9679;</span>
+					<span>{{message.title}}</span>
+				<span class="tack-right">&#9679;</span>
+
+			<div *ngIf="selectedMessage === message" class="details">
+				<button class="detailB" (click)="gotoDetail()">
+					<h2>
+						{{selectedMessage.title}}
+					</h2>
+					<h3>
+						{{selectedMessage.message}}
+					</h3>
+					<span>View Details</span>
+				</button>
+			</div>
+		</li>
+	</ul>
+</div>

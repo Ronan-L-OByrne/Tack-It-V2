@@ -1,0 +1,74 @@
+/* Master Styles */
+h1
+{
+	color: #57986D;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 7em;
+}
+
+h2, h3
+{
+	text-align: center;
+	color: #57986D;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-weight: normal;
+}
+
+html
+{
+	height: 100%;
+}
+
+body
+{
+	height: 100%;
+	margin: 2em;
+	font-size: 1em;
+	background-color: #7CD79A;
+}
+
+body, input[text], button
+{
+	color: #57986D;
+	font-family: Cambria, Georgia;
+}
+
+* 
+{
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.container
+{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	margin: 0 auto;
+	min-width: 252;
+}
+
+section
+{
+	margin: auto;
+	justify-content: center;
+}
+
+
+.center
+{
+	display: flex;
+	flex-flow: column;
+	background-color: white;
+	height: 100%;
+}
+
+.center .column
+{
+ 	flex-grow: 1;
+	height: 100%;
+	padding-top: 5px;
+	width: 55em;
+	border-left: 2px solid #57986D;
+	border-right: 2px solid #57986D;
+}

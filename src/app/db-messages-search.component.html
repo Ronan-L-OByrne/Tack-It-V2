@@ -1,0 +1,12 @@
+<div id="search-component" class="container">
+	<form autocomplete="off">
+		<h4>Message Search: </h4>
+		<input #searchBox id="search-box" (keyup)="search(searchBox.value)" />
+	</form>
+	<div class="results">
+		<div *ngFor="let message of messages | async"
+		(click)="gotoDetail(message)" class="search-result" >
+			{{message.title}}
+		</div>
+	</div>
+</div>
